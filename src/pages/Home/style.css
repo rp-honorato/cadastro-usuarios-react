@@ -7,7 +7,8 @@
 
 h1 {
     color: #fff;
-    font-size: 32px;
+    font-size: 28px;
+    text-align: center;
 }
 
 form {
@@ -41,5 +42,38 @@ form {
         border-radius: 30px;
         height: 40px;
         background-color: #363653;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px;
+        outline: none;
+        
     }
+    
+}
+.card {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2d2d4e;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
+    border-radius: 10px;
+
+    & p {
+    color: #fff;
+    font-weight: bold;
+
+    & span {
+    font-weight: normal;
+    }
+}
+  & button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+ } 
+ & button:hover{
+    opacity: 0.5;
+ }
+
 }
