@@ -1,5 +1,6 @@
 import "./style.css";
 import Trash from "../../assets/Trash.svg";
+import api from "../../services/api";
 
 function Home() {
   const users = [
