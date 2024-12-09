@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     align-items: center;
     padding-top: 100px;
@@ -21,16 +21,16 @@ form {
     max-width: 50%;
     width: 400px;
     margin-bottom: 20px;
-    
+
     & button {
-        border-radius: 30px;
-        background-color: #8b8ae1;
-        height: 40px;
-        border: none;
-        font-weight: bold;
-        cursor: pointer;
-        color: #ffff;
-        font-size: 14px;
+    border-radius: 30px;
+    background-color: #8b8ae1;
+    height: 40px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    color: #ffff;
+    font-size: 14px;
     }
 
     & button:hover {
@@ -38,18 +38,18 @@ form {
     }
 
     & input {
-        border: 1px solid #48456c;
-        border-radius: 30px;
-        height: 40px;
-        background-color: #363653;
-        color: #fff;
-        font-size: 16px;
-        padding: 10px;
-        outline: none;
-        
+    border: 1px solid #48456c;
+    border-radius: 30px;
+    height: 40px;
+    background-color: #363653;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    outline: none;
     }
-    
+
 }
+
 .card {
     display: flex;
     justify-content: space-between;
@@ -60,20 +60,22 @@ form {
     border-radius: 10px;
 
     & p {
-    color: #fff;
-    font-weight: bold;
+        color: #fff;
+        font-weight: bold;
 
-    & span {
-    font-weight: normal;
+        & span {
+        font-weight: normal;
+        }
     }
-}
-  & button {
+    
+    & button {
     background-color: transparent;
     border: none;
     cursor: pointer;
- } 
- & button:hover{
+    }
+
+    & button:hover {
     opacity: 0.5;
- }
+    }
 
 }
