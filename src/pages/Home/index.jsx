@@ -1,5 +1,5 @@
 import "./style.css";
-import Trash from "../../assets/Trash.png";
+import Trash from "../../assets/Trash.svg";
 
 function Home() {
   const users = [
@@ -15,6 +15,12 @@ function Home() {
       age: 27,
       email: "pedro@pedro.com",
     },
+    {
+      id: "diihiheh298ssss333h3yb22fubdddufb23",
+      name: "Maria Silva",
+      age: 29,
+      email: "pmaria@maria.com",
+    }
   ];
 
   return (
@@ -26,7 +32,7 @@ function Home() {
         <input name="email" type="email" placeholder="E-mail" />
         <button type="">Cadastrar</button>
       </form>
-      
+
       {users.map((user) => (
         <div key={user.id}>
           <div>
