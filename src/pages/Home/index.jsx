@@ -13,7 +13,7 @@ function Home() {
   async function getUsers(){
   const usersFromApi = await api.get('/usuarios');
 
-    setUsers(usersFromApi.data); 
+  setUsers(usersFromApi.data); 
   }
 
   async function createUsers(){
@@ -24,12 +24,17 @@ function Home() {
       age: inputAge.current.value,
       email: inputEmail.current.value
     })
-    getUsers()
-    
+  getUsers()
+
   }
 
-  useEffect(() => {
+  async function deleteUsers(id) {
+    await api.delete(`/usuarios/${id}`)
     getUsers()
+
+  }
+  useEffect(() => {
+  getUsers()
   }, [])
 
   return (
@@ -49,8 +54,9 @@ function Home() {
             <p>Idade: <span>{user.age}</span></p>
             <p>Email: <span>{user.email}</span></p>
           </div>
-          <button>
+          <button onClick={() => deleteUsers(user.id)}>
             <img src={Trash} />
+
           </button>
         </div>
       ))}
