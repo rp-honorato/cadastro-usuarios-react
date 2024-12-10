@@ -18,7 +18,12 @@ function Home() {
 
   async function createUsers(){
     //const usersFromApi = await api.get('/usuarios');
-    console.log(inputName, inputAge, inputEmail)
+    //console.log(inputName, inputAge, inputEmail)
+    await api.post('/usuarios', {
+      name: inputName.current.value,
+      age: inputAge.current.value,
+      email: inputEmail.current.value
+    })
   }
 
   useEffect(() => {
