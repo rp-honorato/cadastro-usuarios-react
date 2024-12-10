@@ -4,8 +4,6 @@ import Trash from "../../assets/Trash.svg";
 import api from "../../services/api";
 
 
-//React Hooks
-
 function Home() {
   const [users, setUsers] = useState([])
   const inputName = useRef()
@@ -13,15 +11,14 @@ function Home() {
   const inputEmail = useRef()
 
   async function getUsers(){
-    const usersFromApi = await api.get('/usuarios');
+  const usersFromApi = await api.get('/usuarios');
 
     setUsers(usersFromApi.data); 
   }
 
   async function createUsers(){
     //const usersFromApi = await api.get('/usuarios');
-
-
+    console.log(inputName, inputAge, inputEmail)
   }
 
   useEffect(() => {
@@ -35,7 +32,7 @@ function Home() {
         <input name="nome" type="text" placeholder="Nome" ref={inputName} />
         <input name="idade" type="number" placeholder="Idade" ref={inputAge} />
         <input name="email" type="E-mail" placeholder="E-mail" ref={inputEmail} />
-        <button type="button">Cadastrar</button>
+        <button type="button" onClick={createUsers}>Cadastrar</button>
       </form>
 
       {users.map((user) => (
