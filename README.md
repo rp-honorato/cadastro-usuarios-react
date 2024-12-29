@@ -1,8 +1,5 @@
-# React + Vite
+📂 What does this project do?
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+⚙️ Login screen created with REACT, performing POST and DELETE operations on a Node JS API.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/1fa82f91-6f2b-439e-9dfd-5d5a19f83044)
